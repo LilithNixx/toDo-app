@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*Para hacer el sitio responsive ponemos en el container display:flex y flex-wrap::-webkit-scrollbar-track-piece
+Luego todos los elementos que contiene deben tener una clase, en este caso in-flex para poder darles un min-width*/
+.container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.in-flex {
+    min-width: 250px;
+}
+
+/*FORMULARIO*/
+h1 {
+    margin: 10px;
+}
+
+#formulario {
+    margin: 10px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    padding: 4px;
+    border-radius: 3px;
+    border: 2px solid rgb(180, 180, 247);
+}
+
+.btn {
+    margin-top: 5px;
+    padding: 3px;
+
+    font-size: 18px;
+    color: aliceblue;
+    background: rgb(71, 71, 206);
+    border: none;
+    border-radius: 3px;
+}
+
+/*TAREAS*/
+
+.alert {
+    margin: 10px;
+    padding: 5px 10px;
+
+    background: rgb(241, 178, 178);
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-danger {
+    font-size: 15px;
+    background: rgb(224, 57, 57);
+}

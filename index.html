@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css" type="text/css">
+    <title>To Do List</title>
+</head>
+<body>
+    
+    <div class="container">
+        <h1 class="in-flex">To Do app</h1>
+
+        <section class="alert alert-danger in-flex">Campo todo vacío</section>
+
+        <form id="formulario" class="in-flex">
+
+            <input type="text" name="nombre" placeholder="Ingrese una tarea" class="form">
+
+            <button class="btn" type="submit">Agregar</button>
+            
+        </form>
+
+        <section id="pintarToDo" class="in-flex"><!--templateToDo--></section>
+    </div>
+
+    <template id="templateToDo">
+        <article class="alert">
+            <p class="lead">Lorem</p>
+            <div>
+                <button class="btn btn-danger">Borrar</button>
+            </div>
+        </article>
+    </template>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
